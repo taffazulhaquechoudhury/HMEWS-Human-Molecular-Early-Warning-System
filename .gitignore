@@ -1,0 +1,24 @@
+# HMEWS datasets
+data/raw/
+data/processed/
+
+# Large dataset files
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+
+# Medical / clinical data
+*.dta
+*.sav
+
+# Environment
+.env
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
