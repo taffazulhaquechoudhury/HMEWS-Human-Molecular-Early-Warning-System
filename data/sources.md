@@ -1,7 +1,9 @@
 # HMEWS Dataset Sources
 
-This document lists the datasets used or planned for the Human-Molecular
-Early Warning System (HMEWS) project.
+This document lists the datasets used or planned for the
+**Human-Molecular Early Warning System (HMEWS)** project.
+
+---
 
 ## 1. MIMIC-IV Clinical Database Demo
 
@@ -9,7 +11,8 @@ Early Warning System (HMEWS) project.
 Used for initial development, testing, clinical feature engineering,
 and validation of the HMEWS pipeline.
 
-**Dataset:** MIMIC-IV Clinical Database Demo v2.2
+**Dataset:**  
+MIMIC-IV Clinical Database Demo v2.2
 
 **Official Source:**  
 https://www.physionet.org/content/mimic-iv-demo/2.2/
@@ -28,7 +31,8 @@ Open Data Commons Open Database License (ODbL) v1.0.
 Used for larger-scale clinical/EHR modeling and longitudinal patient
 trajectory analysis.
 
-**Dataset:** MIMIC-IV v3.1
+**Dataset:**  
+MIMIC-IV v3.1
 
 **Official Source:**  
 https://www.physionet.org/content/mimiciv/3.1/
@@ -37,9 +41,9 @@ https://www.physionet.org/content/mimiciv/3.1/
 Credentialed access through PhysioNet.
 
 **Important:**  
-The dataset must not be uploaded directly to this GitHub repository.
-Researchers should obtain the dataset directly from PhysioNet and comply
-with the applicable Data Use Agreement.
+The raw MIMIC-IV dataset must not be uploaded to this GitHub repository.
+Users should obtain the dataset directly from PhysioNet and comply with
+the applicable Data Use Agreement.
 
 ---
 
@@ -53,7 +57,7 @@ datasets for the molecular component of HMEWS.
 https://www.ncbi.nlm.nih.gov/geo/
 
 **Access:**  
-Publicly accessible datasets, subject to the terms applicable to
+Publicly available datasets, subject to the terms applicable to
 individual datasets.
 
 ---
@@ -62,7 +66,7 @@ individual datasets.
 
 **Purpose:**  
 Potential source for large-scale longitudinal health, biomarker,
-proteomic, metabolomic and genetic data.
+proteomic, metabolomic, and genetic data.
 
 **Official Source:**  
 https://www.ukbiobank.ac.uk/use-our-data/apply-for-access/
@@ -78,10 +82,31 @@ UK Biobank data must not be uploaded to this repository.
 # Dataset Usage Policy
 
 The HMEWS repository stores dataset metadata, source links,
-documentation and preprocessing code.
+documentation, and preprocessing code.
 
-Raw restricted datasets are NOT included in this repository.
+Raw restricted datasets are **NOT included** in this repository.
 
 Users should obtain restricted datasets directly from their official
-providers and comply with all applicable licenses, data-use agreements,
-privacy requirements and ethical guidelines.
+providers and comply with all applicable:
+
+- Dataset licenses
+- Data Use Agreements
+- Privacy requirements
+- Ethical requirements
+- Data-sharing restrictions
+
+---
+
+# Reproducibility
+
+To reproduce the HMEWS experiments:
+
+1. Obtain the required datasets from their official sources.
+2. Place the datasets in the appropriate local data directory.
+3. Follow the preprocessing instructions provided in the project.
+4. Run the preprocessing and feature-engineering pipelines.
+5. Train and evaluate the HMEWS models using the documented
+   configuration.
+
+Dataset files should not be committed to this GitHub repository unless
+their license explicitly permits redistribution.
